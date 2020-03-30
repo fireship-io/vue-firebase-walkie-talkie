@@ -41,18 +41,26 @@ export default {
       newUser: false,
       email: '',
       password: '',
+      errorMessage
     }
   },
 
   methods: {
       async signInOrCreateUser() {
-
-        if (this.newUser) {
-          await auth.createUserWithEmailAndPassword(this.email, this.password)
-        } else {
-          await auth.signInWithEmailAndPassword(this.email, this.password)
+ 
+        this.loading = true;
+        this.errorMessage = '';
+        try {
+          if (this.newUser) {
+            await auth.createUserWithEmailAndPassword(this.email, this.password)
+          } else {
+            await auth.signInWithEmailAndPassword(this.email, this.password)
+          }
+        } catch (error) {
+            this.errorMessage = error.message;
         }
 
+        this.loading = false;
       }
 
   },
