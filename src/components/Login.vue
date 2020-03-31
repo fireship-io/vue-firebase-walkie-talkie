@@ -41,7 +41,8 @@ export default {
       newUser: false,
       email: '',
       password: '',
-      errorMessage: ''
+      errorMessage: '',
+      loading: false
     }
   },
 
