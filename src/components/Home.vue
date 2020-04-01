@@ -1,20 +1,17 @@
 <template>
-    <div>
-        <h3>Home</h3>
+  <div class="section">
+    <h2>Home.vue</h2>
 
-        <User v-slot:user="{ user }">
-
-            <div v-if="user">
-                <UserProfile :user="user" />
-
-                <ChatList :uid="user.uid" />
-
-                
-            </div>
-            <Login v-else />
-
-        </User>
-    </div>
+    <User v-slot:user="{ user }">
+      <div v-if="user">
+          <h3>User Profile</h3>
+        <UserProfile :user="user" />
+          <h3>My Chat Rooms</h3>
+        <ChatList :uid="user.uid" />
+      </div>
+      <Login v-else />
+    </User>
+  </div>
 </template>
 
 <script>

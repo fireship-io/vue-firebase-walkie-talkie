@@ -1,9 +1,8 @@
 <template>
-    <div>
-        Logged in as {{ user.uid }}
-
-        <button @click="auth.signOut()">Sign Out</button>
-    </div>
+  <div>
+    Logged in as {{ user.uid }}<br>
+    <button @click="auth.signOut()" class="button">Sign Out</button>
+  </div>
 </template>
 
 <script>

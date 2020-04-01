@@ -1,15 +1,13 @@
 <template>
-    <div>
+  <div>
+    <ul>
+      <li v-for="chat of chats" :key="chat.id">
+        <router-link :to="{ name: 'chat', params: { id: chat.id } }">{{ chat.id }}</router-link>
+      </li>
+    </ul>
 
-        <ul>
-            <li v-for="chat of chats" :key="chat.id">
-              <router-link :to="{ name: 'chat', params: { id: chat.id } }">{{ chat.id }}</router-link>
-            </li>
-        </ul>
-
-        <button @click="createChatRoom()">Create New Chat Room</button>
-
-    </div>
+    <button @click="createChatRoom()" class="button">Create New Chat Room</button>
+  </div>
 </template>
 
 <script>

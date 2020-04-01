@@ -1,24 +1,16 @@
-# vue-chat
+# Vue Voxer
+
+A walkie-talkie style chat app with Vue & Firebase. 
 
 ## Project setup
+
 ```
+git clone <this-repo>
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Add your Firebase project credentials to `src/firebase.js`
+
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

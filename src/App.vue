@@ -2,10 +2,10 @@
   <div id="app">
     <header>
       <h1>Vue Voxer</h1>
-      <p>Realtime Voice Chat</p>
+      <p>Realtime Walkie-Talkie Voice Chat</p>
     </header>
 
-      <router-view></router-view>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -20,5 +20,10 @@ export default {
 </script>
 
 <style>
-
+header {
+  text-align: center;
+}
+button, input {
+  margin-bottom: 10px;
+}
 </style>

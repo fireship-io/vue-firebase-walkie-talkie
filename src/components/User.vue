@@ -1,7 +1,7 @@
-<template> 
-    <div>
-        <slot name="user" :user="user"></slot>
-    </div>
+<template>
+  <div>
+    <slot name="user" :user="user"></slot>
+  </div>
 </template>
 
 <script>
