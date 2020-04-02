@@ -1,6 +1,6 @@
 # Vue Voxer
 
-A walkie-talkie style chat app with Vue & Firebase. 
+A walkie-talkie style chat app with Vue & Firebase. Watch the full [Vue Firebase Course](https://fireship.io/courses/vue/) 👀🔥. 
 
 ## Project setup
 
